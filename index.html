@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./sniper.png">
+    <title>SFXHub</title>
+</head>
+<body>
+    <div id="centerpart">
+        <h1 id="text1">Welcome to SFXHub</h1>
+        <!--<p>My favourite sound effects are here, so i can use them when i'm bored.</p>
+        <img src="./sniper.png" style="margin-left: 350px;" onclick="SFX(1)">
+        <p class="text2">a golf trophy</p>
+        <img src="./ltg.png" onclick="SFX(2)">
+        <p class="text2">You should kill yourself NOW!</p>
+        <img src="./youngfly.png" style="width: 200px;" onclick="SFX(3)">
+        <p class="text2">Young fly on the track</p>-->
+        <img src="./ahremix.png" style="width: 300px;margin-left: 280px;" onclick="SFX(7)">
+        <p class="text2">ah remix</p>
+
+        <img src="./bugsbunny.png" style="width: 300px;margin-left: 280px;" onclick="SFX(8)">
+        <p class="text2">lan kapat çeneni</p>
+
+        <img src="./sound.png" style="width: 300px;margin-left: 280px;" onclick="SFX(9)">
+        <p class="text2">eman eman eman</p>
+
+        <img src="./sound.png" style="width: 300px;margin-left: 280px;" onclick="SFX(10)">
+        <p class="text2">puh</p>
+
+        <img src="./sound.png" style="width: 300px;margin-left: 280px;" onclick="SFX(11)">
+        <p class="text2">yarrak gibi uzuyum oraya</p>
+
+        <img src="./BatuKhan.png" onclick="SFX(4)">
+        <p class="text2">ambatukam</p>
+
+        <img src="./nissan.png" style="width: 300px; margin-left: 280px;"  onclick="SFX(5)">
+        <p class="text2">nissan</p>
+
+        <img src="./whistle.png" style="width: 300px; margin-left: 280px;"  onclick="SFX(6)">
+        <p class="text2">Whistle</p>
+    </div>
+</body>
+</html>
+
+<style>
+    body{
+        margin: -30px;
+        background-image: url(./background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 103%;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    img{
+        margin-top: 100px;
+        margin-left: 320px;
+    }
+    #centerpart{
+        width: 880px;
+        height: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 380px;
+        background: rgba(1, 86, 255, 0.3);
+        border: 1px solid rgba(128, 128, 128, 0.3);
+    }
+    #text1{
+        margin-top: 30px;
+        margin-left: 280px;
+        color: rgba(255, 255, 255, 0.7);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+        user-select: none;
+    }
+    p{
+        text-align: justify;
+        font-size: 25px;
+        color: white;
+        font-family: cursive;
+    }
+    .text2{
+        text-align: center;
+        font-style: italic;
+    }
+</style>
+
+<script>
+    function SFX(x){
+        var sfx = new Audio(''+ x +'.mp3');
+        sfx.play();
+    }
+</script>
